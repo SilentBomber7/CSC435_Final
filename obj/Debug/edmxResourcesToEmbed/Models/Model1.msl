@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="assignment7435ModelStoreContainer" CdmEntityContainer="assignment7435Entities">
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="assignment7435Model.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="categoryID" ColumnName="categoryID" />
+          <ScalarProperty Name="names" ColumnName="names" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Notes">
+      <EntityTypeMapping TypeName="assignment7435Model.Note">
+        <MappingFragment StoreEntitySet="Notes">
+          <ScalarProperty Name="notesID" ColumnName="notesID" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="note1" ColumnName="note" />
+          <ScalarProperty Name="createdOn" ColumnName="createdOn" />
+          <ScalarProperty Name="categoryID" ColumnName="categoryID" />
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="assignment7435Model.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="names" ColumnName="names" />
+          <ScalarProperty Name="createdOn" ColumnName="createdOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
